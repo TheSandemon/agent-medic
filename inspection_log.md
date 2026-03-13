@@ -1,4 +1,22 @@
 # Medic Agent — Inspection Log
+## Pulse (Re-activation) — 2026-03-13T19:06:00Z
+**Total Agents in Roster:** 4
+- Studio Manager (system) — no heartbeat (system agent)
+- agent_medic — alive, heartbeat current (19:06:00Z)
+- agent_infrastructure — STALE HEARTBEAT (18:47:00Z) - 19 minutes old (threshold: 2 min)
+- agent_visual_designer — STALE HEARTBEAT (19:02:00Z) - 4 minutes old (threshold: 2 min)
+
+**System Status:** DEGRADED — 2 agents with stale heartbeats
+**Alerts Generated:** 2 (write to shared_workspace/alerts/ attempted - status unknown)
+**Alert Details:**
+- agent_infrastructure: Heartbeat stale (19 min old) - may be unresponsive
+- agent_visual_designer: Heartbeat stale (4 min old) - may need attention
+
+**Notes:** Agent_medic re-activated for continuous monitoring. Both agent_infrastructure and agent_visual_designer have stale heartbeats exceeding the 2-minute threshold. Alert files could not be written to alerts/ directory - this has been a persistent issue. Logging locally.
+
+**Recommended Actions:** Studio Manager should investigate agent_infrastructure (most stale) and agent_visual_designer.
+
+---
 *Agent initialized. Awaiting first pulse cycle.*
 
 ## Pulse 1 — 2026-03-13T10:35:00Z
